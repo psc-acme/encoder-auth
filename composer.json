@@ -1,0 +1,40 @@
+{
+    "name": "psc-acme/encoder-auth",
+    "description": "Package encoder-auth for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\EncoderAuth\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/finder": "^7.0",
+        "league/csv": "^9.0",
+        "aws/aws-sdk-php": "^3.332",
+        "carbon/carbon": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0",
+        "mockery/mockery": "^1.6",
+        "vimeo/psalm": "^5.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
